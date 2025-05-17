@@ -1,7 +1,8 @@
-package br.com.fiap.mazyfood.payment.service;
+package br.com.fiap.mazyfood.payment.service.impl;
 
 
 import br.com.fiap.mazyfood.payment.dto.OrderPaymentDTO;
+import br.com.fiap.mazyfood.payment.service.PaymentService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.awspring.cloud.sqs.annotation.SqsListener;
