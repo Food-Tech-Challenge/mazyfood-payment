@@ -11,21 +11,30 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import io.awspring.cloud.sqs.operations.SqsTemplate;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 
 @Service
-@RequiredArgsConstructor
 public class PaymentServiceImpl implements PaymentService {
-
-    @Value("${events.queues.payment-status}")
-    private String orderToPayQueue;
 
     private final GatewayService gatewayService;
     private final PaymentRepository paymentRepository;
     private final SqsTemplate sqsTemplate;
+    private final String orderToPayQueue;
+
+    @Autowired
+    public PaymentServiceImpl(GatewayService gatewayService,
+                               PaymentRepository paymentRepository,
+                               SqsTemplate sqsTemplate,
+                               @Value("${events.queues.payment-status}") String orderToPayQueue) {
+        this.gatewayService = gatewayService;
+        this.paymentRepository = paymentRepository;
+        this.sqsTemplate = sqsTemplate;
+        this.orderToPayQueue = orderToPayQueue;
+    }
 
     @Override
     public void processPayment(OrderPaymentDTO orderPaymentDTO) {
