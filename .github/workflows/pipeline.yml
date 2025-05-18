@@ -144,4 +144,7 @@ jobs:
           helm upgrade --install "${{ vars.HELM_RELEASE_NAME }}" helm/ \
             --set image.repository=$(aws sts get-caller-identity --query Account --output text).dkr.ecr.${{ vars.AWS_REGION }}.amazonaws.com/${{ vars.ECR_REPOSITORY }} \
             --set image.tag="${{ vars.IMAGE_TAG }}" \
-            --set database.url="${{ vars.DATABASE_URL }}"
+            --set database.url="${{ vars.DATABASE_URL }}" \
+            --set aws.accessKeyId="${{ secrets.AWS_ACCESS_KEY_ID }}" \
+            --set aws.secretAccessKey="${{ secrets.AWS_SECRET_ACCESS_KEY }}" \
+            --set aws.sessionToken="${{ secrets.AWS_SESSION_TOKEN }}"
