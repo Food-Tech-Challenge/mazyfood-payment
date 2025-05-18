@@ -57,9 +57,7 @@ jobs:
             -Dsonar.projectKey=${{ vars.SONAR_PROJECT_KEY }}
             -Dsonar.projectName=${{ vars.SONAR_PROJECT_NAME }}
             -Dsonar.organization=${{ vars.SONAR_ORGANIZATION }}
-            -Dsonar.java.binaries=**/target
-            -Dsonar.coverage.jacoco.xmlReportPaths=${{ needs.unit-test.outputs.coverage-report }}
-            -Dsonar.coverage.exclusions=**/test/**
+            -Dsonar.java.binaries=target
 
       - name: Wait and Enforce Quality Gate
         uses: sonarsource/sonarqube-quality-gate-action@master
