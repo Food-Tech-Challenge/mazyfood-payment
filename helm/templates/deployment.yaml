@@ -31,7 +31,7 @@ spec:
             - name: MONGODB_URI
               valueFrom:
                 configMapKeyRef:
-                  name: { { .Chart.Name } }-config
+                  name: {{ .Chart.Name }}-config
                   key: MONGODB_URI
             - name: AWS_ACCESS_KEY_ID
               valueFrom:
