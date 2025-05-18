@@ -29,5 +29,5 @@ spec:
             - containerPort: 80
           env:
             - name: MONGODB_URI
-              value: {{ .Values.database.uri }}
+              value: {{ .Values.database.url }}
       automountServiceAccountToken: false

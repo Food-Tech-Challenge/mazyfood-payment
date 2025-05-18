@@ -17,4 +17,4 @@ hpa:
   targetCPUUtilizationPercentage: 50
 
 database:
-  uri: mongodb://host.minikube.internal:27017/payment
+  url: mongodb://host.minikube.internal:27017/payment
