@@ -1,8 +1,8 @@
 # mazyfood-payment
 
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Food-Tech-Challenge_mazyfood-order&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Food-Tech-Challenge_mazyfood-order)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Food-Tech-Challenge_mazyfood-order&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=Food-Tech-Challenge_mazyfood-order)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Food-Tech-Challenge_mazyfood-order&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Food-Tech-Challenge_mazyfood-order)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Food-Tech-Challenge_mazyfood-payment&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Food-Tech-Challenge_mazyfood-payment)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Food-Tech-Challenge_mazyfood-payment&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=Food-Tech-Challenge_mazyfood-payment)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Food-Tech-Challenge_mazyfood-payment&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Food-Tech-Challenge_mazyfood-payment)
 
 
 Tech Challenge Fast Food desenvolvido no curso de Pós-Graduação em Arquitetura de Software na Pós-Tech FIAP.
