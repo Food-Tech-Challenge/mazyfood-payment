@@ -25,6 +25,20 @@ avançados em arquitetura de software com foco em microsserviços.
 
 ---
 
+## Qualidade do Código
+
+### Testes unitários
+![Testes Unitários](./assets/testes.png)
+
+### SonarQube
+![Sonar_1](./assets/sonar.png)
+
+### Cobertura de Testes
+![Cobertura de Testes](./assets/jacoco.png)
+
+---
+
+
 ## Tecnologias Utilizadas
 
 - **Java** (Spring Boot): Framework para construção de aplicações robustas e escaláveis.
